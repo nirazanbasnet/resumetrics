@@ -31,8 +31,10 @@ interface ResumeMetadata {
 
 export default function Details() {
     const navigate = useNavigate();
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [file, setFile] = useState<File | null>(null);
     const [metadata, setMetadata] = useState<ResumeMetadata | null>(null);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [matchResult, setMatchResult] = useState<MatchResult | null>(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
