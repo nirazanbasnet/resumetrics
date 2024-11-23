@@ -49,7 +49,10 @@ export default function Upload() {
                     </p>
                 </div>
 
-                <div className="mb-4 flex justify-end">
+                <div className="mb-4 flex justify-between items-center">
+                    <button onClick={() => navigate('/job-matching-cv')} className="flex items-center text-blue-600 hover:text-blue-800">
+                        Job Matching CV
+                    </button>
                     <button
                         onClick={() => navigate('/resumes')}
                         className="flex items-center text-blue-600 hover:text-blue-800"
