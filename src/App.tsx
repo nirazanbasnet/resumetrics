@@ -4,6 +4,7 @@ import ResumeList from './pages/ResumeList';
 import Details from './pages/Details';
 import JobMatchDetails from './pages/JobMatchDetails';
 import { Toaster } from './components/ui/toaster';
+import Home from './pages/Home';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Upload />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/resume-score" element={<Upload />} />
           <Route path="/resumes" element={<ResumeList />} />
           <Route path="/resume/:id" element={<Details />} />
           <Route path="/job-matching-cv" element={<JobMatchDetails />} />
