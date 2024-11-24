@@ -5,6 +5,7 @@ import Details from './pages/Details';
 import JobMatchDetails from './pages/JobMatchDetails';
 import { Toaster } from './components/ui/toaster';
 import Home from './pages/Home';
+import LinkedInProfileAnalyzer from './pages/LinkedInProfileAnalyzer';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/resumes" element={<ResumeList />} />
           <Route path="/resume/:id" element={<Details />} />
           <Route path="/job-matching-cv" element={<JobMatchDetails />} />
+          <Route path="/linkeding-profile-analyzer" element={<LinkedInProfileAnalyzer />} />
         </Routes>
       </Router>
       <Toaster />
